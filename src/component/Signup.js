@@ -57,7 +57,7 @@ export default function SignUp() {
         "tc":true
       }
       if(datas.email && datas.password && datas.password_confirmation && data.name !== '' && datas.password === datas.password_confirmation){
-        let result= await axios.post(`http://localhost:8000/api/user/register`,datas)
+        let result= await axios.post(`https://vcs-backend.onrender.com/api/user/register`,datas)
         showSuccess()
         setTimeout(() => {
           navigate('/login')

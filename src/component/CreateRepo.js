@@ -66,7 +66,7 @@ const setIt=()=>{
 
   const HandleRepo = async()=>{
     try {
-            let result= await axios.post(`http://localhost:8000/repo/createRepo`,repodetail)
+            let result= await axios.post(`https://vcs-backend.onrender.com/repo/createRepo`,repodetail)
             console.log(result)
             if(result.data.status === 200){
                 showSuccess()

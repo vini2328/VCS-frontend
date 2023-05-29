@@ -19,7 +19,7 @@ function DashBoard() {
 
   useEffect(() => {
     axios
-      .post("http://localhost:8000/repo/seeAllRepos")
+      .post("https://vcs-backend.onrender.com/repo/seeAllRepos")
       .then((response) => {
         setData(response.data.result);
       })

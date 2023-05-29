@@ -46,7 +46,7 @@ function Login() {
             "password":password,
           }
           if(datas.email && datas.password !== '' ){
-            let result= await axios.post(`http://localhost:8000/api/user/login`,datas)
+            let result= await axios.post(`https://vcs-backend.onrender.com/api/user/login`,datas)
             console.log(result.data.status)
             if(result.data.status === "success"){
                 showSuccess()

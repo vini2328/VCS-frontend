@@ -66,7 +66,7 @@ function SaveRepo() {
 
    id= Cookies.get("id")
    let data = {'id':id}
-   axios.post("http://localhost:8000/repo/seeRepo",data)
+   axios.post("https://vcs-backend.onrender.com/repo/seeRepo",data)
    .then((res)=>{
     let result=res.data.result
     setRepositary(result.repositaryName)
@@ -100,8 +100,8 @@ function SaveRepo() {
           
 
     }
-     let res=await axios.put("http://localhost:8000/repo/update",data)  
-     navigate(0)
+     let res=await axios.put("https://vcs-backend.onrender.com/repo/update",data)  
+     navigate('/DashBoard')
      
       
     } catch (error) {
@@ -124,7 +124,7 @@ function SaveRepo() {
   
       }
 
-       let res1 = await axios.post("http://localhost:8000/repo/delete", data1) 
+       let res1 = await axios.post("https://vcs-backend.onrender.com/repo/delete", data1) 
        console.log(res1)
        showSuccess()
        setTimeout(() => {
