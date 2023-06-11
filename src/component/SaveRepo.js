@@ -95,7 +95,7 @@ function SaveRepo() {
       "id":id,
       "repositaryName": repositary,
       "code": code,
-      "commit_msg": newcommitmsg
+      "commit_msg": commitmsg+'\n'+newcommitmsg
   
           
 
@@ -231,13 +231,16 @@ function SaveRepo() {
           </span>
           <label htmlFor="username">Old Commit Message </label>
 
-          <InputText
+          <InputTextarea
             className="oldcomit"
             id="commit_msg"
-            aria-describedby="username-help"
             value={commitmsg}
             disabled
+            autoResize 
+            rows={4}
+            cols={30}
           />
+          
         <label htmlFor="newcommit">Enter New Commit Message </label>
 
         <InputText

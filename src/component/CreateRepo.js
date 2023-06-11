@@ -190,10 +190,9 @@ const Clicked =()=>{
                 <label className='my-1'htmlFor="commit_msg">Enter commit message here</label>
                 <InputText className='dialogbx my-2 mx-8'id="commit_msg" aria-describedby="username-help" value={repodetail.commit_msg}
                  onChange={e => setRepodetail({...repodetail , commit_msg:e.target.value})}
-
-                  />
-                <Button className='my-2 submitbut'label="Submit" onClick={HandleRepo}  severity="success" text raised
- />
+                 />
+                 
+                <Button className='my-2 submitbut'label="Submit" onClick={HandleRepo}  severity="success" text raised />
               </Dialog>
             </div>
           </div>
