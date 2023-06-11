@@ -14,6 +14,8 @@ import SignUp from "./component/Signup";
 import DashBoard from "./component/DashBoard";
 import CreateRepo from "./component/CreateRepo";
 import SaveRepo from "./component/SaveRepo";
+import SendResetEmail from "./component/SendResetEmail";
+import Confrimpass from "./component/ConfirmPass";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -25,7 +27,8 @@ root.render(
       <Route path="/DashBoard" element={<DashBoard/>} />
       <Route path="/repopage" element={<CreateRepo/>} />
       <Route path="/saverepo" element={<SaveRepo/>} />
-
+      <Route path="/sendresetlink" element={<SendResetEmail/>} />
+      <Route path="/confirmpassword/:id/:token" element={<Confrimpass/>} />
 
 
 
