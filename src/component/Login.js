@@ -97,6 +97,8 @@ function Login() {
         </div>
 
         <Button label="Login"  onClick={handleSubmit} icon="pi pi-user" className="w-full" />
+        <Button label="forgot password ?"  onClick={()=>{navigate('/sendresetlink')}}  className="mt-2 w-full" />
+
     </div>
 </div> 
 </div> 

@@ -78,9 +78,12 @@ function DashBoard() {
               >
                 {name}
               </button>
-              <OverlayPanel ref={op}>
-                <div className="cursor" onClick={redir}>
+              <OverlayPanel ref={op} >
+                <div className=" m-3 cursor" onClick={redir}>
                   Logout
+                </div>
+                <div className="cursor m-3" onClick={()=>{navigate('/sendresetlink')}}>
+                  Reset-Password
                 </div>
               </OverlayPanel>
             </div>

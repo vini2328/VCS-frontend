@@ -57,6 +57,7 @@ function SendResetEmail() {
   return (
     <div className='signup'>
                 <Toast ref={toast} />
+                <h2>SEND VERIFICATION TO RESET PASSWORD</h2>
 
         <div className='formit'>
        <div className='my-2'>Email </div>
